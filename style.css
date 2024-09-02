@@ -1,0 +1,85 @@
+body {
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text color */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 300px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #00adb5; /* Accent color */
+}
+
+input[type="number"] {
+    background-color: #2e2e2e;
+    border: 2px solid #393939;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px;
+    width: calc(100% - 26px);
+    margin-bottom: 15px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+input[type="number"]:focus {
+    border: 2px solid #00adb5; /* Accent color on focus */
+}
+
+select {
+    background-color: #2e2e2e;
+    border: 2px solid #393939;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+button {
+    background-color: #00adb5;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 15px;
+    width: 100%;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    box-shadow: 0 0 20px #00adb5, 0 0 40px #00adb5, 0 0 60px #00adb5;
+    transform: scale(1.05);
+}
+
+.result {
+    background-color: #2e2e2e;
+    border-radius: 8px;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.calculator input[type="number"]:hover,
+.calculator select:hover {
+    border: 2px solid #00adb5; /* Accent color on hover */
+}
